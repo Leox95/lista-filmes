@@ -1,0 +1,15 @@
+
+  <input type="text" placeholder="Pesquisar" (input)="pesquisar($event)"/>
+
+<div class="home-container">
+  <div class="card-container">
+    <div class="filmes-card" *ngFor="let filme of filmes">
+      <img src="{{ filme.image }}" />
+      <div class="card-text">
+        <h5>{{ filme.title }}</h5>
+        <p>{{ filme.genres }}</p>
+      </div>
+      <button (click)="detalhes($event)" action="/theaters" id="{{filme.id}}" >Comprar</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 16px auto;
+  width: 900px;
+  height: 600px;
+}
+form{
+  width: 100%;
+}
+.form-container .input-text{
+  width: 100%;
+  height: 56px;
+  margin: 8px 0px;
+}
+.check-container{
+  display: inline-block;
+  width: 100%;
+}
+.form-container button{
+  width: 100%;
+  height: 32px;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 200px;
+  cursor: pointer;
+}
+@media(max-width: 600px){
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 8px;
+    width: 95vw;
+    height: 100%;
+  }
+
+
+}
+

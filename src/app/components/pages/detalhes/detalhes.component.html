@@ -1,0 +1,23 @@
+<div class="container-filme">
+  <div class="apresentacao-filme" *ngFor="let filme of filmeEscolhido">
+    <img src="{{ filme.image }}" />
+    <p>{{ filme.title }}</p>
+  </div>
+  <div class="card-filme" *ngFor="let item of filme">
+    <div class="elementos">
+    <p class="nome">{{ item.name }}</p>
+
+    <p class="padrao">{{ item.address }} -  {{item.addressComplement}} </p>
+    <hr/>
+    <div *ngFor="let room of item.rooms">
+      <div class="container-sala">
+      <p class="padrao" >{{ room.name }} -</p>
+      <p class="padrao" style="color: orange;" *ngFor="let type of room.types">{{type}}</p>
+      </div>
+      <div class="div-sessao">
+      <p routerLink="/cadastro" class="sessao" *ngFor="let session of room.sessions">{{session.time}}</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+.home-container{
+  width: 100%;
+  height: 100%;
+  background: #F1F3F4
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1248px;
+  height: 600px;
+  margin: 15px 16px;
+  background: #F1F3F4
+}
+.filmes-card{
+  width: 156px;
+  height: 280px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-top: 15px;
+
+}
+.filmes-card img{
+  width: 140px;
+  height: 140px;
+  margin: 8px;
+}
+.card-text{
+    height: 80px;
+}
+.card-text h5{
+  font-size: 15px;
+  font-weight: bold;
+  color: #00000099;
+  margin: 0px 8px;
+}
+.card-text p{
+  font-size: 12px;
+  color: #00000099;
+  margin: 0px 8px;
+}
+button{
+  background-color: #1E1E1E;
+  width: 140px;
+  height: 32px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  margin: 5px 8px;
+  cursor: pointer;
+}
+input{
+  width: 1248px;
+  height: 40px;
+  margin: 8px 10px;
+  background: #F1F3F4
+}
+
+@media(max-width: 600px){
+  .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 98vw;
+    height: 100%;
+    margin: 15px auto;
+    background: #F1F3F4;
+    padding-bottom: 8px;
+  }
+  input{
+    width: 95vw;
+    height: 40px;
+    margin: 8px 8px;
+    background: #F1F3F4
+  }
+  .filmes-card{
+    width: 156px;
+    height: 280px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+}

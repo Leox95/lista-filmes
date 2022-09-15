@@ -1,0 +1,14 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 56px;
+  align-items: center;
+}
+.header img{
+  width: 224px;
+  height: 56px;
+}
